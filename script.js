@@ -327,7 +327,7 @@ function renderAddEditForm(editMortgage) {
             return;
         }
         if (isEdit) {
-            const existing = state.mortgages.find(m => m.id === m.id);
+            const existing = state.mortgages.find(m => m.id === editMortgage.id);
             if (existing) {
                 existing.name = name;
                 existing.price = price;
